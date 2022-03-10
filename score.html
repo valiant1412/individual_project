@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="score.css">
+    <script src="./js/da" defer="true"></script>
+    <script src="./js/score.js" defer="true"></script>
+    <title>Your score</title>
+</head>
+
+<body>
+    <div class="pyro hidden">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <div class="rain">
+        <div class="layer-1">
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+        </div>
+        <div class="layer-2">
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+            <div class="rain-drop"></div>
+        </div>
+    </div>
+    <section>
+        <h2> Your score is:</h2>
+        <div class="result">
+            <span class="real_score"><p></p></span>
+            <p>/</p><span class="total_question"></span>
+        </div>
+        <div class="pyro hidden">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <p class="advice">A</p>
+    </section>
+
+    <footer>
+        <div id="sub_button"><button class="button" onclick="check()"><span>Thank you</span></button></div>
+    </footer>
+
+</body>
+
+</html>

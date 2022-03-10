@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/data.js" defer="true"></script>
+    <script src="./js/question.js" defer="true"></script>
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="screen1">
+        <article>
+            <div id="web_name">
+                <h1>Quiz of Duke</h1>
+            </div>
+        </article>
+
+        <section id="image">
+            <img src="./image/194863216_1938211029678995_808597412598900884_n.jpg"> </section>
+        <section id="answer">
+            <p class="heading"></p>
+            <form name="myform">
+                <div class="c">
+                </div>
+                <div id="sub_button"><button type="submit" class="button" onclick="check()"><span>Submit </span></button></div>
+            </form>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </section>
+
+        <footer>
+            <div id="dot_list">
+            </div>
+        </footer>
+        <div class="loader hidden">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen2 hidden">
+        <div class="pyro hidden">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <div class="rain">
+            <div class="layer-1">
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+            </div>
+            <div class="layer-2">
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+                <div class="rain-drop"></div>
+            </div>
+        </div>
+
+        <h2> Your score is:</h2>
+        <div class="result">
+            <span class="real_score"><p></p></span>
+            <span class="total_question"></span>
+        </div>
+        <div class="pyro hidden">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <p class="advice"></p>
+
+        <footer>
+            <div id="sub_button"><button class="button gohome" onclick="check()"><span>Thank you</span></button></div>
+        </footer>
+    </div>
+</body>
+
+</html>
